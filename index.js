@@ -52,5 +52,5 @@ return srcArray.find(e=> e.firstName===firstName)
 }
 
 let calculatePayroll=function(arr){
-return   arr.reduce((acc,value)=>  acc+wagesEarnedOnDate(arr,value),0);
+return   arr.reduce((acc,value)=>  acc+allWagesFor(value),0);
 }
